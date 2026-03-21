@@ -12,14 +12,14 @@
 
 ### The Problem
 
-Modern UI frameworks often hide complexity behind layers of abstraction. For simple web applications—forms, dashboards, content pages—this creates unnecessary overhead:
+Modern UI frameworks often hide complexity behind layers of abstraction. For simple web applications — forms, dashboards, content pages — this creates unnecessary overhead:
 
 - **Implicit reactivity** makes debugging difficult
 - **Heavy dependencies** bloat bundle sizes for basic functionality
 - **Side effects** are hard to trace and predict
 - **Learning curves** steep for straightforward use cases
 
-**explicit-wire** provides a thin, clear layer over the browser's native capabilities. No magic, no hidden state, no reactive proxies—just explicit code that does exactly what you write.
+**explicit-wire** provides a thin, clear layer over the browser's native capabilities. No magic, no hidden state, no reactive proxies — just explicit code that does exactly what you write.
 
 ### Who Is This For?
 
