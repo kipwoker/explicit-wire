@@ -72,6 +72,56 @@ Extend functionality without bloating core:
 
 ---
 
+## Examples
+
+Explore these examples to learn explicit-wire concepts:
+
+| Example | Description |
+|---------|-------------|
+| [Hello World](./examples/hello-world) | Minimal setup - renders a simple "Hello World!" message |
+| [File Upload](./examples/file-upload) | Drag-and-drop file upload with progress bar and event handling |
+| [Form Submission](./examples/form-submission) | User management CRUD app with routing and form handling |
+| [Layout Shell](./examples/layout-shell) | Dashboard layout with header, sidebar, footer, and dynamic menus |
+| [Complex Routing](./examples/complex-routing) | Advanced routing with middleware, role-based access control, and dynamic menus |
+| [Data Table](./examples/data-table) | Product inventory table with sorting, pagination, bulk actions, and dropdown menus |
+
+Each example includes its own README with instructions on how to run it and what concepts it demonstrates.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (v16 or later)
+- npm or yarn
+
+### Install the package
+
+```bash
+npm install explicit-wire
+```
+
+Or with yarn:
+
+```bash
+yarn add explicit-wire
+```
+
+### Install development dependencies
+
+For TypeScript projects, you'll need TypeScript and a bundler. The examples use Vite:
+
+```bash
+npm install --save-dev typescript vite
+```
+
+---
+
+## Quick Start
+
+For a step-by-step guide to building your first explicit-wire application, see the **[Quick Start Tutorial](./QUICKSTART.md)**.
+
+---
+
 ## User Journey Diagrams
 
 ### Page Load & Initial Render
@@ -149,56 +199,6 @@ sequenceDiagram
     
     Note over DOM: No memory leaks, handlers cleaned up
 ```
-
----
-
-## Examples
-
-Explore these examples to learn explicit-wire concepts:
-
-| Example | Description |
-|---------|-------------|
-| [Hello World](./examples/hello-world) | Minimal setup - renders a simple "Hello World!" message |
-| [File Upload](./examples/file-upload) | Drag-and-drop file upload with progress bar and event handling |
-| [Form Submission](./examples/form-submission) | User management CRUD app with routing and form handling |
-| [Layout Shell](./examples/layout-shell) | Dashboard layout with header, sidebar, footer, and dynamic menus |
-| [Complex Routing](./examples/complex-routing) | Advanced routing with middleware, role-based access control, and dynamic menus |
-| [Data Table](./examples/data-table) | Product inventory table with sorting, pagination, bulk actions, and dropdown menus |
-
-Each example includes its own README with instructions on how to run it and what concepts it demonstrates.
-
-## Installation
-
-### Prerequisites
-
-- Node.js (v16 or later)
-- npm or yarn
-
-### Install the package
-
-```bash
-npm install explicit-wire
-```
-
-Or with yarn:
-
-```bash
-yarn add explicit-wire
-```
-
-### Install development dependencies
-
-For TypeScript projects, you'll need TypeScript and a bundler. The examples use Vite:
-
-```bash
-npm install --save-dev typescript vite
-```
-
----
-
-## Quick Start
-
-For a step-by-step guide to building your first explicit-wire application, see the **[Quick Start Tutorial](./QUICKSTART.md)**.
 
 ---
 
