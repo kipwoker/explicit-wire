@@ -28,11 +28,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/kipwoker/explicit-wire.git"
   },
-  "homepage": "",
+  "homepage": "https://github.com/kipwoker/explicit-wire#readme",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/kipwoker/explicit-wire/issues"
   },
   "devDependencies": {
     "@testing-library/react-hooks": "^8.0.1",
