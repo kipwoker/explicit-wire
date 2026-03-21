@@ -1,0 +1,243 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+/* File upload container */
+.file-upload-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload-container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.file-upload-container .subtitle {
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* Drop zone styles */
+.drop-zone {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.drop-zone:hover {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+.drop-zone.dragging {
+    border-color: #007bff;
+    background-color: #e7f3ff;
+    border-style: solid;
+}
+
+.drop-zone.uploading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.drop-zone-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.drop-icon {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.drop-zone p {
+    color: #666;
+    font-size: 16px;
+}
+
+.or-text {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Drag overlay */
+.drag-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Progress bar */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-top: 16px;
+    overflow: hidden;
+    display: none;
+}
+
+.progress-container:has(.progress-bar[style*="width"]) {
+    display: block;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+/* Status message */
+.status-message {
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 16px;
+    display: none;
+}
+
+.status-message.uploading,
+.status-message.success,
+.status-message.error {
+    display: block;
+}
+
+.status-message.uploading {
+    background-color: #e7f3ff;
+    color: #0056b3;
+}
+
+.status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Uploaded files section */
+.uploaded-files {
+    margin-top: 32px;
+}
+
+.uploaded-files h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+.file-name {
+    color: #333;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.file-size {
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 16px;
+}
+
+.no-files {
+    color: #666;
+    text-align: center;
+    padding: 24px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+/* Error state */
+.error {
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+    text-align: center;
+}

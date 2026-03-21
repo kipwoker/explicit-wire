@@ -1,0 +1,23 @@
+{
+  "name": "layout-shell-example",
+  "version": "1.0.0",
+  "description": "Layout shell example demonstrating control composition with twemoji and dynamic menu",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "explicit-wire": "file:../../",
+    "twemoji": "^14.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^4.4.9"
+  }
+}

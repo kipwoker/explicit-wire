@@ -1,0 +1,22 @@
+{
+  "name": "hello-world-example",
+  "version": "1.0.0",
+  "description": "Simple hello world example using explicit-wire",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "explicit-wire": "file:../../"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^4.4.9"
+  }
+}

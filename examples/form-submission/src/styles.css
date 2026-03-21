@@ -1,0 +1,214 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+/* Form styles */
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 24px;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-group input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+}
+
+.btn-small {
+    padding: 6px 12px;
+    font-size: 12px;
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-small:hover {
+    background-color: #545b62;
+}
+
+/* Status message styles */
+.status-message {
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+}
+
+.status-message.saving,
+.status-message.success,
+.status-message.error {
+    display: block;
+}
+
+.status-message.saving {
+    background-color: #e7f3ff;
+    color: #0056b3;
+}
+
+.status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* User list styles */
+.user-list-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.user-list-container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.user-list-container h1 {
+    color: #333;
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user-info strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.user-info span {
+    color: #666;
+    font-size: 14px;
+}
+
+.no-users {
+    text-align: center;
+    color: #666;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Loading styles */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    color: #666;
+}
