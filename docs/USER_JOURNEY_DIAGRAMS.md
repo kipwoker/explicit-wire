@@ -73,4 +73,4 @@ sequenceDiagram
     EHS->>EHS: Unregister handler for 'submit-btn'
     EHS->>DOM: Event listener cleanup
     
-    Note over DOM: No memory leaks, handlers cleaned up
+    Note over DOM: No behavior leaks, handlers cleaned up

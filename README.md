@@ -63,7 +63,7 @@ You explicitly subscribe to events on specific element IDs. The EventHandlerStor
 on('click', 'my-button', handler) → waits for element → registers → executes on click
 ```
 
-This prevents memory leaks and ensures handlers only exist when their targets do.
+This prevents behavior leaks and ensures handlers only exist when their targets do.
 
 ### Plugins
 

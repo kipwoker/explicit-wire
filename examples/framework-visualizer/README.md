@@ -134,4 +134,4 @@ The visualization shows these framework components as animated nodes:
 
 ## Limitations
 
-This example uses native event subscriptions for simplicity. In production applications with view replacement, use the `on()` function with `addEventHandlerStore` to ensure automatic cleanup of event listeners when views are replaced, preventing memory leaks.
+This example uses native event subscriptions for simplicity. In production applications with view replacement, use the `on()` function with `addEventHandlerStore` to ensure automatic cleanup of event listeners when views are replaced, preventing behavior leaks.
