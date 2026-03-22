@@ -1,0 +1,24 @@
+{
+  "name": "framework-visualizer-example",
+  "version": "1.0.0",
+  "description": "Interactive D3 visualization of explicit-wire framework lifecycle",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "explicit-wire": "file:../../",
+    "d3": "^7.8.5"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "typescript": "^5.9.3",
+    "vite": "^4.4.9"
+  }
+}

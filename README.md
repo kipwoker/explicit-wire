@@ -6,6 +6,8 @@
 [![bundle size](https://img.shields.io/bundlephobia/minzip/explicit-wire)](https://bundlephobia.com/package/explicit-wire)
 [![license](https://img.shields.io/npm/l/explicit-wire.svg)](LICENSE)
 
+![explicit-wire architecture](./docs/scheme.png)
+
 ---
 
 ## Motivation
@@ -84,6 +86,7 @@ Explore these examples to learn explicit-wire concepts:
 | [Layout Shell](./examples/layout-shell) | Dashboard layout with header, sidebar, footer, and dynamic menus |
 | [Complex Routing](./examples/complex-routing) | Advanced routing with middleware, role-based access control, and dynamic menus |
 | [Data Table](./examples/data-table) | Product inventory table with sorting, pagination, bulk actions, and dropdown menus |
+| [Framework Visualizer](./examples/framework-visualizer) | Interactive D3 visualization of render lifecycle and event subscription flow |
 
 Each example includes its own README with instructions on how to run it and what concepts it demonstrates.
 
@@ -119,6 +122,10 @@ npm install --save-dev typescript vite
 ## Quick Start
 
 For a step-by-step guide to building your first explicit-wire application, see the **[Quick Start Tutorial](./QUICKSTART.md)**.
+
+## Best Practices
+
+For comprehensive guidance on using explicit-wire effectively, including patterns for events, routing, rendering, and more, see the **[Best Practices & Recommendations](./RECOMMENDATIONS.md)**.
 
 ---
 
