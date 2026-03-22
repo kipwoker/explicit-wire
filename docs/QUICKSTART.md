@@ -9,7 +9,7 @@ This tutorial walks you through creating a minimal "Hello World" application usi
 
 ## Step 1: Clone or copy the hello-world example
 
-The easiest way to get started is to copy the existing [hello-world example](./examples/hello-world):
+The easiest way to get started is to copy the existing [hello-world example](../examples/hello-world):
 
 ```bash
 cp -r examples/hello-world my-explicit-wire-app
@@ -46,7 +46,7 @@ Refer to each file in the example for the complete implementation.
 
 ### Creating a Control
 
-A control implements the `IControl` interface and defines how to render UI. See [examples/hello-world/src/controls/hello-world.ts](./examples/hello-world/src/controls/hello-world.ts):
+A control implements the `IControl` interface and defines how to render UI. See [examples/hello-world/src/controls/hello-world.ts](../examples/hello-world/src/controls/hello-world.ts):
 
 ```typescript
 import { IControl } from 'explicit-wire'
@@ -60,7 +60,7 @@ export class HelloWorld implements IControl {
 
 ### Application entry point
 
-The main entry point sets up the framework with a router and navigator. See [examples/hello-world/src/main.ts](./examples/hello-world/src/main.ts) for the complete setup.
+The main entry point sets up the framework with a router and navigator. See [examples/hello-world/src/main.ts](../examples/hello-world/src/main.ts) for the complete setup.
 
 Key parts:
 - Create a `Router` instance
@@ -82,5 +82,5 @@ Open your browser and navigate to `http://localhost:3007`. You should see "Hello
 
 ## Next Steps
 
-- Explore the [examples](./examples) to learn more advanced concepts
-- Check out the [README](./README.md) for core concepts and architecture
+- Explore the [examples](../examples) to learn more advanced concepts
+- Check out the [README](../README.md) for core concepts and architecture
